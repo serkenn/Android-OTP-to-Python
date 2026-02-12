@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plusmsg-otp"
+version = "0.1.0"
+description = "Android +Message OTP 自動取得クライアント"
+requires-python = ">=3.10"
+dependencies = ["requests"]
+
+[project.scripts]
+plusmsg-otp-watcher = "plusmsg_otp.watcher:main"
